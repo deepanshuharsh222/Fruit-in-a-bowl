@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fruit in the Bowl | Chef-curated fresh fruit bowls, delivered</title>
+<meta name="description" content="Fruit in the Bowl: chef-curated fruit bowls, made to order, 6-hour sell-by, delivered in fixed slots. The idea that makes fresh easy.">
+<meta property="og:title" content="Fruit in the Bowl">
+<meta property="og:description" content="The idea that makes fresh easy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🥭%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAVBAR -->
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a href="#hero" class="logo" aria-label="Fruit in the Bowl home">🥭 Fruit in the Bowl</a>
+    <nav id="navMenu" class="nav__menu" aria-label="Main">
+      <a href="#problem">Why us</a><a href="#menu">Menu</a><a href="#builder">Build</a>
+      <a href="#how">How it works</a><a href="#plans">Plans</a><a href="#farm">Farm to bowl</a>
+      <a href="#b2b">Offices</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Open cart">🛒<span class="badge" id="cartCount">0</span></button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- 1 HERO -->
+<section class="hero" id="hero">
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <h1>Fresh fruit bowls, made when you order.</h1>
+      <p class="tagline">The idea that makes fresh easy.</p>
+      <p>Chef-curated bowls for daily convenience and vibrant health. No peeling, no chopping, no waiting.</p>
+      <div class="btns">
+        <a class="btn btn--primary" href="#menu">Order Now</a>
+        <a class="btn btn--ghost" href="#plans">See Subscription Plans</a>
+      </div>
+      <ul class="badges" aria-label="Our promises">
+        <li>🧑‍🍳 Made to order</li><li>⏱️ 6-hour sell-by</li><li>🛵 Delivered in fixed slots</li><li>🌱 Eco-friendly packaging</li>
+      </ul>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <img src="image.png" alt="" srcset="" height="400px" width="400px">
+    </div>
+  </div>
+</section>
+
+<!-- Stats strip -->
+<section class="stats" aria-label="Key numbers">
+  <div class="wrap stats__in">
+    <div><strong><span data-count="6">0</span> hour</strong><span>sell-by</span></div>
+    <div><strong>under <span data-count="6">0</span> min</strong><span>assembly</span></div>
+    <div><strong><span data-count="3">0</span> to <span data-count="4">0</span> km</strong><span>delivery radius</span></div>
+    <div><strong>below <span data-count="8">0</span>%</strong><span>waste target</span></div>
+  </div>
+</section>
+
+<!-- 2 PROBLEM / SOLUTION -->
+<section class="sec" id="problem">
+  <div class="wrap">
+    <h2>Fresh is hard. We made it easy.</h2>
+    <div class="grid3">
+      <article class="card reveal"><h3>😩 Perishability</h3><p class="prob">Cut fruit spoils fast and goes to waste.</p><p class="sol"><b>Our fix:</b> forecast-driven sourcing, so we buy what you will eat.</p></article>
+      <article class="card reveal"><h3>🎲 Inconsistent quality</h3><p class="prob">One day it's great, the next it's mushy.</p><p class="sol"><b>Our fix:</b> standardized recipes and produce grading.</p></article>
+      <article class="card reveal"><h3>🚪 Convenience barrier</h3><p class="prob">Washing, peeling and chopping takes time.</p><p class="sol"><b>Our fix:</b> ready-to-eat bowls with guaranteed delivery windows.</p></article>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Today vs With Fruit in the Bowl</caption>
+        <thead><tr><th scope="col"></th><th scope="col">Today</th><th scope="col">With Fruit in the Bowl</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Buying</th><td>Market trips, guesswork</td><td>Order in two taps</td></tr>
+          <tr><th scope="row">Preparing</th><td>Wash, peel, chop</td><td>Chef-assembled in under 6 minutes</td></tr>
+          <tr><th scope="row">Storing</th><td>Fridge space, spoilage</td><td>Eat within 6 hours, nothing to store</td></tr>
+          <tr><th scope="row">Variety</th><td>Same two or three fruits</td><td>Seasonal, rotating bowls</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 3 MENU -->
+<section class="sec sec--tint" id="menu">
+  <div class="wrap">
+    <h2>The menu</h2>
+    <div class="filters" role="group" aria-label="Filter bowls" id="filters">
+      <button class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" data-filter="vegan" aria-pressed="false">Vegan</button>
+      <button class="chip" data-filter="high-protein" aria-pressed="false">High-protein</button>
+      <button class="chip" data-filter="sugar-conscious" aria-pressed="false">Sugar-conscious</button>
+      <button class="chip" data-filter="nut-free" aria-pressed="false">Nut-free</button>
+    </div>
+    <div class="grid3" id="menuGrid" aria-live="polite"></div>
+    <p class="note">Dietary tags are a guide. Please read the allergen note in our FAQ.</p>
+  </div>
+</section>
+
+<!-- 4 BUILDER -->
+<section class="sec" id="builder">
+  <div class="wrap">
+    <h2>Build your own bowl</h2>
+    <div class="builder">
+      <form class="builder__form" id="builderForm" onsubmit="return false">
+        <fieldset><legend>1. Pick a base</legend><div class="opts" id="bBase"></div></fieldset>
+        <fieldset><legend>2. Pick up to 3 toppings</legend><div class="opts" id="bTop"></div><p class="msg" id="bMsg" role="status"></p></fieldset>
+        <fieldset><legend>3. Pick one add-on (optional)</legend><div class="opts" id="bAdd"></div></fieldset>
+      </form>
+      <aside class="builder__sum card" aria-live="polite">
+        <h3>Your bowl</h3>
+        <p id="bSummary"></p>
+        <p class="price">Rs. <span id="bPrice">199</span></p>
+        <p class="note">Base Rs. 199, then Rs. 15 for each topping after the first. Bowl price capped at Rs. 249.</p>
+        <button class="btn btn--primary" id="bAddCart" type="button">Add to cart</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 5 HOW IT WORKS -->
+<section class="sec sec--tint" id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li class="reveal"><span>🍓</span><h3>Pick or build a bowl</h3><p>Choose from the menu or make your own.</p></li>
+      <li class="reveal"><span>🕗</span><h3>Choose a delivery slot</h3><p>8-9 am, 12-1 pm or 4-5 pm.</p></li>
+      <li class="reveal"><span>📱</span><h3>Pay online</h3><p>UPI or card, securely.</p></li>
+      <li class="reveal"><span>🧊</span><h3>We assemble and deliver</h3><p>Assembled in under 6 minutes, delivered chilled.</p></li>
+    </ol>
+    <p class="note center">In a hurry? Pick our 45-minute on-demand option for a small extra charge (Rs. 30).</p>
+  </div>
+</section>
+
+<!-- 6 PLANS -->
+<section class="sec" id="plans">
+  <div class="wrap">
+    <h2>Subscription plans</h2>
+    <div class="toggle" role="group" aria-label="Billing rhythm">
+      <button class="chip is-on" data-rhythm="weekly" aria-pressed="true">Weekly</button>
+      <button class="chip" data-rhythm="biweekly" aria-pressed="false">Bi-weekly</button>
+    </div>
+    <div class="grid3" id="planGrid"></div>
+    <ul class="perks"><li>About 10% off every bowl</li><li>Pause or skip anytime</li><li>Priority delivery slots</li><li>Reminder the day before</li></ul>
+    <div class="card calc">
+      <h3>Subscription calculator</h3>
+      <label for="calcRange">Bowls per delivery: <output id="calcN">5</output></label>
+      <input type="range" id="calcRange" min="1" max="12" value="5">
+      <p>Average bowl Rs. 179. Without a plan: <s>Rs. <span id="calcFull"></span></s></p>
+      <p class="price">Rs. <span id="calcPrice"></span> <small id="calcPer"></small></p>
+      <p class="note" id="calcSave"></p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 FARM TO BOWL -->
+<section class="sec sec--tint" id="farm">
+  <div class="wrap two">
+    <div>
+      <h2>Farm to bowl</h2>
+      <p>We started because we wanted to know where our fruit came from. So we ask local and organic farmers to grow for us, and we put their story on every label.</p>
+      <p>Scan the QR code on your bowl to see the farm, the harvest day and the grade.</p>
+      <h3>Our quality promise</h3>
+      <ul class="ticks"><li>Fixed recipe weights</li><li>Graded produce</li><li>5°C cold chain</li><li>6-hour sell-by</li></ul>
+    </div>
+    <figure class="qr card">
+      <svg viewBox="0 0 110 110" role="img" aria-label="Decorative QR code" id="qrSvg"></svg>
+      <figcaption>Decorative example. Real labels carry a working code.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 8 DIFFERENT -->
+<section class="sec" id="different">
+  <div class="wrap">
+    <h2>Why we're different</h2>
+    <div class="table-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th scope="col"></th><th scope="col" class="us">Fruit in the Bowl</th><th scope="col">Local fruit-bowl shops</th><th scope="col">Street vendors</th><th scope="col">Quick-commerce cut fruit</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Freshness guarantee</th><td class="us">6-hour sell-by</td><td>Varies</td><td>None</td><td>Unclear</td></tr>
+          <tr><th scope="row">Customization</th><td class="us">Full builder</td><td>Limited</td><td>Limited</td><td>None</td></tr>
+          <tr><th scope="row">Delivery promise</th><td class="us">Fixed slots</td><td>Rarely</td><td>None</td><td>Fast, no fixed slot</td></tr>
+          <tr><th scope="row">Subscription</th><td class="us">Yes</td><td>Rarely</td><td>No</td><td>Rarely</td></tr>
+          <tr><th scope="row">Food-safety visibility</th><td class="us">QR on every label</td><td>Low</td><td>Low</td><td>Low</td></tr>
+          <tr><th scope="row">Price</th><td class="us">Rs. 149 to 249</td><td>Mid</td><td>Low</td><td>Mid</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 9 B2B -->
+<section class="sec sec--tint" id="b2b">
+  <div class="wrap two">
+    <div>
+      <h2>For offices, gyms and events</h2>
+      <ul class="ticks"><li>Mini-bowl packs</li><li>Standing orders</li><li>Fixed daily delivery time</li><li>Monthly invoicing</li><li>Event fruit-bowl bars</li></ul>
+    </div>
+    <form class="card form" id="b2bForm" novalidate>
+      <h3>Tell us what you need</h3>
+      <div class="field"><label for="b2bOrg">Organisation</label><input id="b2bOrg" name="org" required autocomplete="organization"><span class="err" role="alert"></span></div>
+      <div class="field"><label for="b2bPhone">Phone</label><input id="b2bPhone" name="phone" type="tel" required inputmode="numeric" autocomplete="tel"><span class="err" role="alert"></span></div>
+      <div class="field"><label for="b2bSize">Bowls per day</label><input id="b2bSize" name="size" type="number" min="5" required><span class="err" role="alert"></span></div>
+      <button class="btn btn--primary" type="submit">Send enquiry</button>
+      <p class="ok" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+
+<!-- 10 SUSTAINABILITY -->
+<section class="sec" id="sustain">
+  <div class="wrap">
+    <h2>Good for you, kinder to the planet</h2>
+    <div class="grid3">
+      <article class="card reveal"><h3>📍 Local sourcing</h3><p>Shorter trips from farm to bowl.</p></article>
+      <article class="card reveal"><h3>♻️ Packaging</h3><p>Recyclable or compostable, always.</p></article>
+      <article class="card reveal"><h3>📉 Waste below 8%</h3><p>Our target, tracked every week.</p></article>
+      <article class="card reveal"><h3>🥤 Second life</h3><p>Overripe fruit becomes smoothies and sauces.</p></article>
+      <article class="card reveal"><h3>🤝 Same-day donation</h3><p>Safe unsold items go to those who need them.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 11 COMMUNITY -->
+<section class="sec sec--tint" id="community">
+  <div class="wrap">
+    <h2>Community and loyalty</h2>
+    <div class="grid3">
+      <article class="card"><h3>🎓 Nutrition workshops</h3><p>Plain-language sessions with our nutritionists.</p></article>
+      <article class="card"><h3>🌾 Farm-to-table tastings</h3><p>Meet the growers and taste the season.</p></article>
+      <article class="card"><h3>💌 Refer a friend</h3><p>You both get a free add-on.</p></article>
+      <article class="card"><h3>⭐ Points programme</h3><p>Earn points on every bowl, redeem on the next.</p></article>
+      <article class="card"><h3>🎁 Welcome offer</h3><p>A treat on your first order.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 12 TESTIMONIALS -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <h2>What people say</h2>
+    <p class="note center"><strong>Sample feedback.</strong> These are illustrative personas, not real customers.</p>
+    <div class="carousel" id="carousel" role="region" aria-roledescription="carousel" aria-label="Testimonials">
+      <button class="icon-btn" id="prevT" aria-label="Previous testimonial">‹</button>
+      <blockquote id="quote" aria-live="polite"></blockquote>
+      <button class="icon-btn" id="nextT" aria-label="Next testimonial">›</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<!-- 13 FAQ -->
+<section class="sec sec--tint" id="faq">
+  <div class="wrap narrow">
+    <h2>Questions, answered</h2>
+    <div id="faqList"></div>
+  </div>
+</section>
+
+<!-- 14 CONTACT -->
+<section class="sec" id="contact">
+  <div class="wrap two">
+    <div>
+      <h2>Contact and pre-order</h2>
+      <address>
+        📍 12 Orchard Lane, Your City 000000<br>
+        📞 <a href="tel:+910000000000">+91 00000 00000</a><br>
+        ✉️ <a href="mailto:hello@fruitinthebowl.example">hello@fruitinthebowl.example</a>
+      </address>
+      <p class="socials"><a href="#contact">Instagram</a> <a href="#contact">Facebook</a> <a href="#contact">WhatsApp</a></p>
+      <p class="note">Address, phone and email are placeholders.</p>
+    </div>
+    <form class="card form" id="contactForm" novalidate>
+      <div class="field"><label for="cName">Name</label><input id="cName" required autocomplete="name"><span class="err" role="alert"></span></div>
+      <div class="field"><label for="cPhone">Phone</label><input id="cPhone" type="tel" required inputmode="numeric" autocomplete="tel"><span class="err" role="alert"></span></div>
+      <div class="field"><label for="cEmail">Email</label><input id="cEmail" type="email" required autocomplete="email"><span class="err" role="alert"></span></div>
+      <div class="field"><label for="cHood">Neighbourhood</label><input id="cHood" required><span class="err" role="alert"></span></div>
+      <div class="field"><label for="cBowl">Preferred bowl</label><select id="cBowl"></select></div>
+      <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" rows="3"></textarea></div>
+      <button class="btn btn--primary" type="submit">Pre-order</button>
+      <p class="ok" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- 15 FOOTER -->
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div><p class="logo">🥭 Fruit in the Bowl</p><p>The idea that makes fresh easy.</p></div>
+    <nav aria-label="Footer"><a href="#menu">Menu</a> <a href="#plans">Plans</a> <a href="#farm">Farm to bowl</a> <a href="#faq">FAQ</a> <a href="#contact">Contact</a></nav>
+    <p>FSSAI Licence No: 00000000000000 (placeholder)</p>
+    <p>© <span id="year">2026</span> Fruit in the Bowl. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+<!-- CART DRAWER -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+  <div class="drawer__head"><h2 id="cartTitle">Your cart</h2><button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button></div>
+  <ul class="cart-list" id="cartList"></ul>
+  <p class="empty" id="cartEmpty">Your cart is empty. Add a bowl from the menu.</p>
+  <div class="drawer__foot">
+    <label for="slot">Delivery slot</label>
+    <select id="slot">
+      <option value="8-9 am">8-9 am</option><option value="12-1 pm">12-1 pm</option>
+      <option value="4-5 pm">4-5 pm</option><option value="45-minute on-demand">45-minute on-demand (+Rs. 30)</option>
+    </select>
+    <dl class="totals">
+      <dt>Subtotal</dt><dd id="tSub">Rs. 0</dd>
+      <dt>Delivery</dt><dd id="tDel">Rs. 0</dd>
+      <dt><b>Total</b></dt><dd><b id="tTot">Rs. 0</b></dd>
+    </dl>
+    <p class="note">Delivery Rs. 22 under Rs. 300. GST is included in the prices shown.</p>
+    <button class="btn btn--primary block" id="checkoutBtn" disabled>Checkout</button>
+  </div>
+</aside>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal__box">
+    <button class="icon-btn modal__x" id="closeModal" aria-label="Close checkout">✕</button>
+    <div id="checkoutStep">
+      <h2 id="modalTitle">Checkout</h2>
+      <form id="checkoutForm" novalidate>
+        <div class="field"><label for="kName">Name</label><input id="kName" required autocomplete="name"><span class="err" role="alert"></span></div>
+        <div class="field"><label for="kPhone">Phone</label><input id="kPhone" type="tel" required inputmode="numeric" autocomplete="tel"><span class="err" role="alert"></span></div>
+        <div class="field"><label for="kAddr">Delivery address</label><textarea id="kAddr" rows="2" required autocomplete="street-address"></textarea><span class="err" role="alert"></span></div>
+        <div class="field"><label for="kSlot">Delivery slot</label><select id="kSlot"></select></div>
+        <button class="btn btn--primary block" type="submit">Place order</button>
+      </form>
+    </div>
+    <div id="confirmStep" hidden>
+      <h2>Order confirmed 🎉</h2>
+      <div id="confirmBody" role="status"></div>
+      <button class="btn btn--primary block" id="doneBtn">Done</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
